@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento ejercicio</title>
+    <link rel="stylesheet" href="/CSS/seguimiento.css">
+</head>
+
+<body>
+    <!--ENCABEZADO-->
+    <header>
+
+        <div class="encabezado">
+            <a href="index.html"><img class="imghome" src="../MULTIMEDIA/header foto.jpg" alt="foto fitness"></a>
+            <label for="buscador"></label>
+            <input class="buscador" type="text" name="buscador" required id="buscador"
+                placeholder="Busca en FitnessPlan" />
+
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <div class="seguimiento">
+            <div class="intensidad">
+                <h2>Intensidad:</h2>
+                <div>
+                    <input type="radio" id="alto" name="radio" value="alto" />
+                    <label for="alto">Alto</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="medio" name="radio" value="medio" />
+                    <label for="medio">Medio</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="bajo" name="radio" value="bajo" />
+                    <label for="bajo">Bajo</label>
+                </div>
+            </div>
+            <div class="peso">
+                <h2>Peso(kg):</h2>
+                <input type="number" id="peso" name="peso" min="0" max="100" />
+            </div>
+            <div class="numrep">
+                <h2>Número repeticiones:</h2>
+                <input type="number" id="numrepet" name="numrepet" min="0" max="100" />
+            </div>
+            <div class="numseries">
+                <h2>Número series:</h2>
+                <input type="number" id="numseri" name="numseri" min="1" max="100" />
+            </div>
+            <div class="tiempo">
+                <h2>Tiempo empleado:</h2>
+                <input type="number" id="tiempoempleado" name="tiempoempleado">
+            </div>
+            <br>
+
+        </div>
+        <button class="btnejercicio">TERMINAR</button>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <p>&copy; 2024 FitnessPlan. Todos los derechos reservados.</p>
+        </a>
+
+        <a target="_blank" href="https://www.facebook.com/?locale=ca_ES"><img class="iconoredsocial"
+                src="../MULTIMEDIA/facebook.png" alt="iconofb"></a>
+
+        <a target="_blank" href="https://www.instagram.com/"><img class="iconoredsocial"
+                src="../MULTIMEDIA/instagram.png" alt="iconoinsta"></a>
+
+        <a target="_blank" href="https://www.youtube.com/"><img class="iconoredsocial" src="../MULTIMEDIA/youtube.png"
+                alt="iconoyt"></a>
+
+
+    </footer>
+</body>
+
+</html>
