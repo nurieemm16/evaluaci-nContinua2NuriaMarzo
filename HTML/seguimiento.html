@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguimiento ejercicio</title>
-    <link rel="stylesheet" href="/CSS/seguimiento.css">
+    <link rel="stylesheet" href="../CSS/seguimiento.css">
+    
 </head>
 
 <body>
@@ -25,21 +26,8 @@
     <main>
         <div class="seguimiento">
             <div class="intensidad">
-                <h2>Intensidad:</h2>
-                <div>
-                    <input type="radio" id="alto" name="radio" value="alto" />
-                    <label for="alto">Alto</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="medio" name="radio" value="medio" />
-                    <label for="medio">Medio</label>
-                </div>
-
-                <div>
-                    <input type="radio" id="bajo" name="radio" value="bajo" />
-                    <label for="bajo">Bajo</label>
-                </div>
+                <h2>Intensidad del ejercicio:</h2>
+                <input type="string" id="intensidad" name="intensidad"  placeholder="Alto, Medio o Bajo"/>
             </div>
             <div class="peso">
                 <h2>Peso(kg):</h2>
@@ -60,7 +48,7 @@
             <br>
 
         </div>
-        <button class="btnejercicio">TERMINAR</button>
+        <button class="btnejercicio" id="btn-seguimiento">TERMINAR</button>
     </main>
     <!--FOOTER-->
     <footer>
@@ -78,6 +66,7 @@
 
 
     </footer>
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>

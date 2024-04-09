@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios Perder Peso</title>
     <link rel="stylesheet" href="../CSS/ejperderpeso.css">
+    <script src="../JS/script.js"></script>
 </head>
 
 <body>
@@ -23,56 +24,54 @@
     <!--MAIN-->
     <main>
         <div class="ejercicios">
-            <button>
-                <img src="/MULTIMEDIA/brazo.png" alt="brazo">
+            <button onclick="showBicepsPerderPeso()">
+                <img src="../MULTIMEDIA/brazo.png" alt="brazo" id="btn-brazo">
             </button>
-            <button>
-                <img src="/MULTIMEDIA/abds.png" alt="abdominales">
+            <button onclick="showAbsPerderPeso()">
+                <img src="../MULTIMEDIA/abds.png" alt="abdominales" id="abds">
             </button>
-            <button>
-                <img src="/MULTIMEDIA/gluteos.png" alt="gluteos">
-            </button>
-            <button>
-                <img src="/MULTIMEDIA/pierna.png" alt="piernas">
+            <button onclick="showPiernasPerderPeso()">
+                <img src="../MULTIMEDIA/pierna.png" alt="piernas">
             </button>
 
         </div>
         <br>
 
-        <div class="explicacionej">
+        <div class="explicacionej" id="explicacionej" style="display: none;">
             <div>
                 <h3>Nombre ejercicio:</h3>
-                <p>Curl de bíceps.</p>
+                <p id="nombreEjercicio"></p>
             </div>
 
             <div>
                 <h3>Instrucciones:</h3>
-                <p>Con los codos pegados al cuerpo, justo delante de la caja torácica, gira las palmas de las manos
-                    hacia arriba mientras levantas las mancuernas hacia los hombros. Contrae totalmente el bíceps al
-                    llegar al punto más alto del movimiento. Repite el movimiento a la inversa para volver a la posición
-                    inicial.</p>
+                <p id="instruccionesEjercicio"></p>
+                <p></p>
             </div>
 
             <div>
                 <h3>Musculos a trabajar:</h3>
-                <p>Bíceps.</p>
+                <p id="musculosEjercicio"></p>
+                <p></p>
             </div>
 
             <div>
                 <h3>Equipamento:</h3>
-                <p>Mancuerna.</p>
+                <p id="equipamentoEjercicio"></p>
+                <p></p>
             </div>
             <div>
                 <h3>Vídeo explicativo:</h3>
+                <a id="videoEjercicio" href="" target="_blank">Enlace vídeo explicativo</a>
             </div>
 
-            <br> 
-            <a href="/HTML/seguimiento.html"><button class="btnejercicio">¡Empezar!</button>
+            <br>
+            <a href="../HTML/seguimiento.html"><button class="btnejercicio">¡Empezar!</button>
             </a>
-            
+
         </div>
 
-
+        
 
 
 
@@ -99,6 +98,7 @@
 
 
     </footer>
+
 </body>
 
 </html>

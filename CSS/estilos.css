@@ -4,13 +4,8 @@ body {
 
 }
 
-main {
-    padding: 2rem;
-    margin: 3rem;
-}
-
 a {
-    color:rgb(87, 17, 17);
+    color: rgb(87, 17, 17);
     text-decoration: none;
 }
 
@@ -21,8 +16,8 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: none;
-    color: black;
+    text-decoration:underline;
+    color:goldenrod;
 }
 
 
@@ -51,12 +46,17 @@ a:hover {
 
 /*MAIN*/
 
-.main{
+.mainindex {
+    margin: 2rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-around;
-    align-content: center;
-    margin-top: 3rem;
+    text-align: center;
+    margin-top: 28vh;
+
 }
+
+
 
 
 

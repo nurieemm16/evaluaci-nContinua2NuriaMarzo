@@ -54,7 +54,7 @@ img {
 }
 
 #explicacionej{
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
