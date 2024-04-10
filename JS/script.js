@@ -1,4 +1,8 @@
-//EJERCICIOS BRAZOS
+/*Autora: Núria Marzo*/
+
+//EJERCICIOS FITNESS:
+
+//Ejercicios Brazos/Parte alta del cuerpo:
 
 const bicepsPerderPeso = {
   nombre: "Curl de bíceps.",
@@ -27,7 +31,7 @@ const hombrosResistencia = {
   video: "https://www.youtube.com/watch?v=oU6NgHWEYb0",
 };
 
-//EJERCICIOS CORE
+//Ejercicios Core:
 
 const corePerderPeso = {
   nombre: "Plancha abdominal.",
@@ -56,7 +60,7 @@ const coreResistencia = {
   video: "https://www.youtube.com/watch?v=4oYU_1HjbtM",
 };
 
-//EJERCICIOS PIERNA
+//Ejercicios Pierna:
 
 const piernaPerderPeso = {
   nombre: "Sentadilla.",
@@ -87,10 +91,11 @@ const piernaResistencia = {
   video: "https://www.youtube.com/watch?v=K-6DG1hcHzU",
 };
 
-//FUNCION SHOW EJERCICIO BICEPS PERDER PESO
+//FUNCIÓN SHOW AL HACER CLIC AL EJERCICIO
+
 function showDetallesEjercicios() {
-  const explicacionej = document.getElementsByClassName("explicacionej")[0];
-  
+  const explicacionej = document.getElementById("explicacionej");
+  //Con este IF, aparece o desaparece el ejercicio con el display none/flex
   if (explicacionej.style.display === "none") {
     explicacionej.style.display = "flex";
   } else {
@@ -98,7 +103,9 @@ function showDetallesEjercicios() {
   }
 }
 
-/*Creamos funcion pasandole el parámetro ejercicio el cual es el objeto con datos del ejercicio.*/ 
+//FUNCIÓN PARA AÑADIR LOS DATOS DEL EJERCICIO A TRAVÉS DEL OBJETO(DÓNDE DENTRO DE SUS VALORES ESTÁN LAS INSTRUCCIONES DEL EJERCICIO) 
+
+/*Creamos función pasandole el parámetro ejercicio el cual es el objeto con datos del ejercicio.*/ 
 function añadirDatosEjercicio(ejercicio) {
   const nombre = ejercicio.nombre
   document.getElementById("nombreEjercicio").innerHTML = nombre
@@ -113,6 +120,8 @@ function añadirDatosEjercicio(ejercicio) {
 }
 
 
+//FUNCIONES PERDER PESO:
+
 function showBicepsPerderPeso() {
   // Llamamos a la función añadirDatosEjercicio junto al parámetro (objeto) del ejericio que queremos mostrar
   añadirDatosEjercicio(bicepsPerderPeso)
@@ -120,12 +129,50 @@ function showBicepsPerderPeso() {
 }
 
 function showAbsPerderPeso() {
+  
   añadirDatosEjercicio(corePerderPeso)
   showDetallesEjercicios()
 }
 
 function showPiernasPerderPeso() {
   añadirDatosEjercicio(piernaPerderPeso)
+  showDetallesEjercicios()
+}
+
+//FUNCIONES FUERZA:
+
+function showBicepsFuerza() {
+  // Llamamos a la función añadirDatosEjercicio junto al parámetro (objeto) del ejericio que queremos mostrar
+  añadirDatosEjercicio(tricepsFuerza)
+  showDetallesEjercicios()
+}
+
+function showAbsFuerza() {
+  añadirDatosEjercicio(coreFuerza)
+  showDetallesEjercicios()
+}
+
+function showPiernasFuerza() {
+  añadirDatosEjercicio(piernaFuerza)
+  showDetallesEjercicios()
+}
+
+
+//FUNCIONES RESISTENCIA CARDIOVASCULAR:
+
+function showBicepsResistencia() {
+  // Llamamos a la función añadirDatosEjercicio junto al parámetro (objeto) del ejericio que queremos mostrar
+  añadirDatosEjercicio(hombrosResistencia)
+  showDetallesEjercicios()
+}
+
+function showAbsResistencia() {
+  añadirDatosEjercicio(coreResistencia)
+  showDetallesEjercicios()
+}
+
+function showPiernasResistencia() {
+  añadirDatosEjercicio(piernaResistencia)
   showDetallesEjercicios()
 }
 
