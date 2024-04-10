@@ -26,7 +26,7 @@
 
     <!--MAIN-->
     <main>
-        <div class="seguimiento">
+        <div class="seguimiento" id="seguimiento">
             <div class="intensidad">
                 <h2>Intensidad del ejercicio:</h2>
                 <input type="string" id="intensidad" name="intensidad"  placeholder="Alto, Medio o Bajo"/>
@@ -44,13 +44,46 @@
                 <input type="number" id="numseri" name="numseri" min="1" max="100" />
             </div>
             <div class="tiempo">
-                <h2>Tiempo empleado:</h2>
+                <h2>Tiempo empleado(minutos):</h2>
                 <input type="number" id="tiempoempleado" name="tiempoempleado">
             </div>
             <br>
 
+            <button class="btnejercicio" id="btn-seguimiento">TERMINAR</button>
         </div>
-        <button class="btnejercicio" id="btn-seguimiento">TERMINAR</button>
+
+
+        <div class="seguimiento2" id="seguimiento2" style="display: none;" >
+            <div>
+                <h2>Intensidad del ejercicio:</h2>
+                <p id="intensidadEjercicio"></p>
+            </div>
+            <div>
+                <h2>Peso(kg):</h2>
+                <p id="pesoEjercicio"></p>
+            </div>
+            <div>
+                <h2>Número repeticiones:</h2>
+                <p id="numrepsEjercicio"></p>
+            </div>
+            <div>
+                <h2>Número series:</h2>
+                <p id="numseriesEjercicio"></p>
+            </div>
+            <div>
+                <h2>Tiempo empleado(minutos):</h2>
+                <p id="tiempoEjercicio"></p>
+            </div>
+            
+
+        </div>
+
+
+
+
+
+
+
     </main>
     
     <!--FOOTER-->

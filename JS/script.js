@@ -10,8 +10,9 @@ const bicepsPerderPeso = {
     "Con los codos pegados al cuerpo, justo delante de la caja torácica, gira las palmas de las manos hacia arriba mientras levantas las mancuernas hacia los hombros. Contrae totalmente el bíceps al llegar al punto más alto del movimiento. Repite el movimiento a la inversa para volver a la posición inicial.",
   musculosAtrabajar: "Bíceps.",
   equipamento: "Mancuerna.",
-  video: "https://www.youtube.com/watch?v=HU2lghjU29Y",
+  video: "https://www.youtube.com/embed/HU2lghjU29Y?si=m0WOeVgVhzQ_Iuat",
 };
+
 
 const tricepsFuerza = {
   nombre: "Extensión de tríceps sentado.",
@@ -19,7 +20,7 @@ const tricepsFuerza = {
     "Sentados en un banco con una mancuerna o una barra debemos extender los brazos por encima de nuestra cabeza y flexionarlos de forma controlada hacía atrás hasta que estos formen un ángulo cercano a los 90º. Luego volvemos a extenderlos por completo y esto será una repetición.",
   musculosAtrabajar: "Tríceps.",
   equipamento: "Mancuerna y banco.",
-  video: "https://www.youtube.com/watch?v=dxLlYmNOr-E",
+  video: "https://www.youtube.com/embed/dxLlYmNOr-E?si=BElHTGfBhPYoFJMN",
 };
 
 const hombrosResistencia = {
@@ -28,7 +29,7 @@ const hombrosResistencia = {
     "Vista siempre al frente, agarre prono, mancuerna a la altura de la barbilla y espalda recta en todo momento.",
   musculosAtrabajar: "Hombros y deltoides.",
   equipamento: "Mancuerna.",
-  video: "https://www.youtube.com/watch?v=oU6NgHWEYb0",
+  video: "https://www.youtube.com/embed/oU6NgHWEYb0?si=w95TZzsV3hvAk_Ox",
 };
 
 //Ejercicios Core:
@@ -39,7 +40,7 @@ const corePerderPeso = {
     "Colocar tu cuerpo como cuando haces flexiones, solo que con los codos apoyados en el suelo. La idea es mantener la postura durante algunos segundos, manteniendo la espalda recta y sin bajar o subir los glúteos para no reducir su efectividad.",
   musculosAtrabajar: "Abdominales centrales.",
   equipamento: "Esterilla.",
-  video: "https://www.youtube.com/watch?v=Bsof_3XO2Tg",
+  video: "https://www.youtube.com/embed/Bsof_3XO2Tg?si=ZvzAa5JttM6T3EPL",
 };
 
 const coreFuerza = {
@@ -48,7 +49,7 @@ const coreFuerza = {
     "Colocamos el cuerpo de lado y nos apoyamos únicamente con un codo. De la misma manera que sucedía en el ejercicio anterior, tendrás que mantener la postura con el cuerpo recto y trabajar los dos lados por igual. Mientras que lo pongas en práctica procura no acercar la cadera o alejarla del suelo porque podrías afectar la eficacia del ejercicio.",
   musculosAtrabajar: "Oblicuos.",
   equipamento: "Esterilla.",
-  video: "https://www.youtube.com/watch?v=bRivOELQVOs",
+  video: "https://www.youtube.com/embed/bRivOELQVOs?si=Bs6isv_Q7joSGk-v",
 };
 
 const coreResistencia = {
@@ -57,7 +58,7 @@ const coreResistencia = {
     "Tumbarse con la cabeza boca arriba, pegar cada brazo a un lado del cuerpo, dejando las palmas de las manos hacia abajo, y elevar las piernas hasta formar un ángulo de 90º con el torso.",
   musculosAtrabajar: "Core entero.",
   equipamento: "Esterilla y/o toalla.",
-  video: "https://www.youtube.com/watch?v=4oYU_1HjbtM",
+  video: "https://www.youtube.com/embed/4oYU_1HjbtM?si=gLDdWnAyeBHdGVLY",
 };
 
 //Ejercicios Pierna:
@@ -69,16 +70,16 @@ const piernaPerderPeso = {
   musculosAtrabajar: "Glúteos y cuádriceps.",
   equipamento: "Nada.",
   video:
-    "https://www.youtube.com/watch?v=dqynXqte24o&embeds_referring_euri=https%3A%2F%2Fwww.expansion.com%2Ffueradeserie%2Fcuerpo%2F2023%2F05%2F14%2F6449d6c9468aebd81b8b4640.html&embeds_referring_origin=https%3A%2F%2Fwww.expansion.com&source_ve_path=OTY3MTQ&feature=emb_imp_woyt",
+    "https://www.youtube.com/embed/dqynXqte24o?si=vKxZSP8O3Pl3JOfi",
 };
 
 const piernaFuerza = {
-  nombre: "Walking lunge.",
+  nombre: "Walking Lunge.",
   instrucciones:
     "Consiste en caminar hacia adelante dando una zancada comuna pierna, mientras la otra queda atrás y baja hasta que la rodilla casi roce el suelo. Debe hacerse de forma coordinada y no demasiado rápido para asegurarse de que no se corre el riesgo de lesión. Será clave mantener la rodilla de la zancada firme y sin que se doble hacia los lados.",
   musculosAtrabajar: "Cuádriceps, los isquiotibiales y los glúteos",
   equipamento: "Nada.",
-  video: "https://www.youtube.com/watch?v=2nk3yjfdGz4",
+  video: "https://www.youtube.com/embed/2nk3yjfdGz4?si=vlzntyreUVJiqrS5",
 };
 
 const piernaResistencia = {
@@ -88,7 +89,7 @@ const piernaResistencia = {
   musculosAtrabajar:
     "Cuádriceps, glúteos mayor, medio y menor, isquiotibiales, abductores, los gemelos y los músculos de la cadera.",
   equipamento: "Silla o banco",
-  video: "https://www.youtube.com/watch?v=K-6DG1hcHzU",
+  video: "https://www.youtube.com/embed/K-6DG1hcHzU?si=IjUS3pvwwP07mU5B",
 };
 
 //FUNCIÓN SHOW AL HACER CLIC AL EJERCICIO
@@ -103,97 +104,112 @@ function showDetallesEjercicios() {
   }
 }
 
-//FUNCIÓN PARA AÑADIR LOS DATOS DEL EJERCICIO A TRAVÉS DEL OBJETO(DÓNDE DENTRO DE SUS VALORES ESTÁN LAS INSTRUCCIONES DEL EJERCICIO) 
 
-/*Creamos función pasandole el parámetro ejercicio el cual es el objeto con datos del ejercicio.*/ 
+
+
+/*Creamos función pasandole el parámetro ejercicio el cual es el objeto con datos del ejercicio.*/
 function añadirDatosEjercicio(ejercicio) {
-  const nombre = ejercicio.nombre
-  document.getElementById("nombreEjercicio").innerHTML = nombre
-  const instrucciones = ejercicio.instrucciones
-  document.getElementById("instruccionesEjercicio").innerHTML = instrucciones
-  const musculos = ejercicio.musculosAtrabajar
-  document.getElementById("musculosEjercicio").innerHTML = musculos
-  const equipamento = ejercicio.equipamento
-  document.getElementById("equipamentoEjercicio").innerHTML = equipamento
-  const video = ejercicio.video
-  document.getElementById('videoEjercicio').setAttribute('href', video);
+  const nombre = ejercicio.nombre;
+  document.getElementById("nombreEjercicio").innerHTML = nombre;
+  const instrucciones = ejercicio.instrucciones;
+  document.getElementById("instruccionesEjercicio").innerHTML = instrucciones;
+  const musculos = ejercicio.musculosAtrabajar;
+  document.getElementById("musculosEjercicio").innerHTML = musculos;
+  const equipamento = ejercicio.equipamento;
+  document.getElementById("equipamentoEjercicio").innerHTML = equipamento;
+  const video = ejercicio.video;
+  document.getElementById("videoEjercicio").setAttribute("src", video);
 }
+
+
 
 
 //FUNCIONES PERDER PESO:
 
 function showBicepsPerderPeso() {
   // Llamamos a la función añadirDatosEjercicio junto al parámetro (objeto) del ejericio que queremos mostrar
-  añadirDatosEjercicio(bicepsPerderPeso)
-  showDetallesEjercicios()
+  añadirDatosEjercicio(bicepsPerderPeso);
+  showDetallesEjercicios();
 }
 
 function showAbsPerderPeso() {
-  
-  añadirDatosEjercicio(corePerderPeso)
-  showDetallesEjercicios()
+    añadirDatosEjercicio(corePerderPeso);
+    showDetallesEjercicios();
 }
 
 function showPiernasPerderPeso() {
-  añadirDatosEjercicio(piernaPerderPeso)
-  showDetallesEjercicios()
+    añadirDatosEjercicio(piernaPerderPeso);
+    showDetallesEjercicios();
 }
 
 //FUNCIONES FUERZA:
 
 function showBicepsFuerza() {
   // Llamamos a la función añadirDatosEjercicio junto al parámetro (objeto) del ejericio que queremos mostrar
-  añadirDatosEjercicio(tricepsFuerza)
-  showDetallesEjercicios()
+  añadirDatosEjercicio(tricepsFuerza);
+  showDetallesEjercicios();
 }
 
 function showAbsFuerza() {
-  añadirDatosEjercicio(coreFuerza)
-  showDetallesEjercicios()
+  añadirDatosEjercicio(coreFuerza);
+  showDetallesEjercicios();
 }
 
 function showPiernasFuerza() {
-  añadirDatosEjercicio(piernaFuerza)
-  showDetallesEjercicios()
+  añadirDatosEjercicio(piernaFuerza);
+  showDetallesEjercicios();
 }
-
 
 //FUNCIONES RESISTENCIA CARDIOVASCULAR:
 
 function showBicepsResistencia() {
   // Llamamos a la función añadirDatosEjercicio junto al parámetro (objeto) del ejericio que queremos mostrar
-  añadirDatosEjercicio(hombrosResistencia)
-  showDetallesEjercicios()
+  añadirDatosEjercicio(hombrosResistencia);
+  showDetallesEjercicios();
 }
 
 function showAbsResistencia() {
-  añadirDatosEjercicio(coreResistencia)
-  showDetallesEjercicios()
+  añadirDatosEjercicio(coreResistencia);
+  showDetallesEjercicios();
 }
 
 function showPiernasResistencia() {
-  añadirDatosEjercicio(piernaResistencia)
-  showDetallesEjercicios()
+  añadirDatosEjercicio(piernaResistencia);
+  showDetallesEjercicios();
 }
-
 
 //POP UP SEGUIMIENTO BOTÓN
 
-document.getElementById("btn-seguimiento").addEventListener("click", ejercicioAcabado);
+document
+  .getElementById("btn-seguimiento")
+  .addEventListener("click", ejercicioAcabado);
 
 function ejercicioAcabado() {
+  //.value vol dir que agafa el valor que em posat al input del formulari i ho guarda a la variable intensidad, peso, etc.
+  let intensidad = document.getElementById("intensidad").value;
+  let peso = document.getElementById("peso").value;
+  let numRepeticiones = document.getElementById("numrepet").value;
+  let numSeries = document.getElementById("numseri").value;
+  let tiempoEmpleado = document.getElementById("tiempoempleado").value;
+  if (
+    peso === "" ||
+    intensidad === "" ||
+    typeof(intensidad) !== "string" ||
+    numRepeticiones === "" ||
+    numSeries === "" ||
+    tiempoEmpleado === ""
+  ) {
+    alert("Los datos introducidos no son correctos.");
+  } else {
+    alert("¡Bien Hecho!");
+    // Agafar l'element HTML de destí (<p> buit) i afegim la corresponent variable que hem creat amunt.
+    document.getElementById("intensidadEjercicio").innerHTML = intensidad;
+    document.getElementById("pesoEjercicio").innerHTML = peso;
+    document.getElementById("numrepsEjercicio").innerHTML = numRepeticiones;
+    document.getElementById("numseriesEjercicio").innerHTML = numSeries;
+    document.getElementById("tiempoEjercicio").innerHTML = tiempoEmpleado;
 
-    let intensidad = document.getElementById("intensidad").value;
-    let peso = document.getElementById("peso").value;
-    let numRepeticiones = document.getElementById("numrepet").value;
-    let numSeries = document.getElementById("numseri").value;
-    let tiempoEmpleado = document.getElementById("tiempoempleado").value;
-    
-    if(peso === '' || intensidad === "" || numRepeticiones === "" || numSeries === "" || tiempoEmpleado === "") {
-      alert("Los datos introducidos no son correctos.")
-    } else {
-      alert("¡Bien Hecho!");
-       // Redirigir a mi página principal (home)
-      window.location.href = "./index.html";
-    }
+    document.getElementById("seguimiento2").style.display = "flex";
+
+}
 }
