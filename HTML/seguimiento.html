@@ -28,25 +28,27 @@
     <main>
         <div class="seguimiento" id="seguimiento">
             <div class="intensidad">
-                <h2>Intensidad del ejercicio:</h2>
-                <input type="string" id="intensidad" name="intensidad"  placeholder="Alto, Medio o Bajo"/>
+                <h2>INTENSIDAD DEL EJERCICIO:</h2>
+                <input type="string" id="intensidad" name="intensidad"  placeholder="Alta, Media o Baja"/>
             </div>
             <div class="peso">
-                <h2>Peso(kg):</h2>
-                <input type="number" id="peso" name="peso" min="0" max="100" />
+                <h2>PESO:</h2>
+                <input type="number" id="peso" name="peso" min=1 placeholder="En KG"/>
             </div>
             <div class="numrep">
-                <h2>Número repeticiones:</h2>
-                <input type="number" id="numrepet" name="numrepet" min="0" max="100" />
+                <h2>NÚMERO DE REPETICIONES:</h2>
+                <input type="number" id="numrepet" name="numrepet" min=1 max=100 />
             </div>
             <div class="numseries">
-                <h2>Número series:</h2>
-                <input type="number" id="numseri" name="numseri" min="1" max="100" />
+                <h2>NÚMERO DE SERIES:</h2>
+                <input type="number" id="numseri" name="numseri" min=1 max=100 />
             </div>
             <div class="tiempo">
-                <h2>Tiempo empleado(minutos):</h2>
-                <input type="number" id="tiempoempleado" name="tiempoempleado">
+                <h2>TIEMPO EMPLEADO:</h2>
+                <input type="number" id="tiempoempleado" name="tiempoempleado" placeholder="En minutos" >
             </div>
+            <br>
+            <br>
             <br>
 
             <button class="btnejercicio" id="btn-seguimiento">TERMINAR</button>

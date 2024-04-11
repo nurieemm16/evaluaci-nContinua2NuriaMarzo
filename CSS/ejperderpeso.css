@@ -37,11 +37,19 @@ main {
 /*MAIN*/
 
 .ejercicios {
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
 }
+
+.btnsperder{
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+
 
 img {
     width: 150px;

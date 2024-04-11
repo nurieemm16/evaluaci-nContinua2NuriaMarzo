@@ -13,7 +13,6 @@ const bicepsPerderPeso = {
   video: "https://www.youtube.com/embed/HU2lghjU29Y?si=m0WOeVgVhzQ_Iuat",
 };
 
-
 const tricepsFuerza = {
   nombre: "Extensión de tríceps sentado.",
   instrucciones:
@@ -46,7 +45,7 @@ const corePerderPeso = {
 const coreFuerza = {
   nombre: "Plancha lateral.",
   instrucciones:
-    "Colocamos el cuerpo de lado y nos apoyamos únicamente con un codo. De la misma manera que sucedía en el ejercicio anterior, tendrás que mantener la postura con el cuerpo recto y trabajar los dos lados por igual. Mientras que lo pongas en práctica procura no acercar la cadera o alejarla del suelo porque podrías afectar la eficacia del ejercicio.",
+    "Colocamos el cuerpo de lado y nos apoyamos únicamente con un codo.  Tendrás que mantener la postura con el cuerpo recto y trabajar los dos lados por igual. Mientras que lo pongas en práctica, procura no acercar la cadera o alejarla del suelo porque podrías afectar la eficacia del ejercicio.",
   musculosAtrabajar: "Oblicuos.",
   equipamento: "Esterilla.",
   video: "https://www.youtube.com/embed/bRivOELQVOs?si=Bs6isv_Q7joSGk-v",
@@ -69,26 +68,25 @@ const piernaPerderPeso = {
     "Situarse de pie con las piernas separadas según el ancho de los hombros, con los pies hacia afuera. Con la espalda erguida y sin que se tense, el movimiento comienza con un descenso llevando los glúteos hacia atrás, como si se adoptase una posición sentada. A continuación, se recupera la postura inicial y se repite de nuevo.",
   musculosAtrabajar: "Glúteos y cuádriceps.",
   equipamento: "Nada.",
-  video:
-    "https://www.youtube.com/embed/dqynXqte24o?si=vKxZSP8O3Pl3JOfi",
+  video: "https://www.youtube.com/embed/dqynXqte24o?si=vKxZSP8O3Pl3JOfi",
 };
 
 const piernaFuerza = {
   nombre: "Walking Lunge.",
   instrucciones:
     "Consiste en caminar hacia adelante dando una zancada comuna pierna, mientras la otra queda atrás y baja hasta que la rodilla casi roce el suelo. Debe hacerse de forma coordinada y no demasiado rápido para asegurarse de que no se corre el riesgo de lesión. Será clave mantener la rodilla de la zancada firme y sin que se doble hacia los lados.",
-  musculosAtrabajar: "Cuádriceps, los isquiotibiales y los glúteos",
+  musculosAtrabajar: "Cuádriceps, los isquiotibiales y los glúteos.",
   equipamento: "Nada.",
   video: "https://www.youtube.com/embed/2nk3yjfdGz4?si=vlzntyreUVJiqrS5",
 };
 
 const piernaResistencia = {
-  nombre: "Sentadilla búlgara",
+  nombre: "Sentadilla búlgara.",
   instrucciones:
     "La sentadilla búlgara requiere de un soporte o superficie, como puede ser una silla. La técnica consiste en situarse de pie y de espaldas a dicho objeto, una de las dos piernas se apoyará en la superficie elevada mientras que la otra sigue en el suelo. El movimiento se trata de bajar el cuerpo de modo que la rodilla adelantada adquiera un ángulo de 90 grados.",
   musculosAtrabajar:
     "Cuádriceps, glúteos mayor, medio y menor, isquiotibiales, abductores, los gemelos y los músculos de la cadera.",
-  equipamento: "Silla o banco",
+  equipamento: "Silla o banco.",
   video: "https://www.youtube.com/embed/K-6DG1hcHzU?si=IjUS3pvwwP07mU5B",
 };
 
@@ -104,13 +102,10 @@ function showDetallesEjercicios() {
   }
 }
 
-
-
-
 /*Creamos función pasandole el parámetro ejercicio el cual es el objeto con datos del ejercicio.*/
 function añadirDatosEjercicio(ejercicio) {
-  const nombre = ejercicio.nombre;
-  document.getElementById("nombreEjercicio").innerHTML = nombre;
+  const nombre = ejercicio.nombre; //Aquí creamos una variable, y cojemos del objeto la propiedad de nombre junto con su valor
+  document.getElementById("nombreEjercicio").innerHTML = nombre; //Aquí cojemos el elemento nombreEjercicio de nuestro HTML y lo cambiamos a la variable nombre. De esta manera, en el html aparecera el valor de la propiedad nombre.
   const instrucciones = ejercicio.instrucciones;
   document.getElementById("instruccionesEjercicio").innerHTML = instrucciones;
   const musculos = ejercicio.musculosAtrabajar;
@@ -121,9 +116,6 @@ function añadirDatosEjercicio(ejercicio) {
   document.getElementById("videoEjercicio").setAttribute("src", video);
 }
 
-
-
-
 //FUNCIONES PERDER PESO:
 
 function showBicepsPerderPeso() {
@@ -133,13 +125,13 @@ function showBicepsPerderPeso() {
 }
 
 function showAbsPerderPeso() {
-    añadirDatosEjercicio(corePerderPeso);
-    showDetallesEjercicios();
+  añadirDatosEjercicio(corePerderPeso);
+  showDetallesEjercicios();
 }
 
 function showPiernasPerderPeso() {
-    añadirDatosEjercicio(piernaPerderPeso);
-    showDetallesEjercicios();
+  añadirDatosEjercicio(piernaPerderPeso);
+  showDetallesEjercicios();
 }
 
 //FUNCIONES FUERZA:
@@ -182,34 +174,41 @@ function showPiernasResistencia() {
 
 document
   .getElementById("btn-seguimiento")
-  .addEventListener("click", ejercicioAcabado);
+  .addEventListener("click", ejercicioAcabado); //Aquí cojemos por el id el botón de seguimiento, y le decimos que cuando se haga click, se ejecute la siguiente función:
 
 function ejercicioAcabado() {
-  //.value vol dir que agafa el valor que em posat al input del formulari i ho guarda a la variable intensidad, peso, etc.
-  let intensidad = document.getElementById("intensidad").value;
+  //.value vol dir que agafa el valor que hem posat al input del formulari i ho guarda a la variable intensidad, peso, etc. El valor obtingut és el valor ingressat per l'usuari al camp d'entrada del formulari.
+  let intensidad = document.getElementById("intensidad").value; 
   let peso = document.getElementById("peso").value;
   let numRepeticiones = document.getElementById("numrepet").value;
   let numSeries = document.getElementById("numseri").value;
   let tiempoEmpleado = document.getElementById("tiempoempleado").value;
+  
+  //Aquest if serveix per a verificar si hi ha valors buits en les variables relacionades amb el formulari. La alerta "Los datos introducidos no son correctos." s'activarà, si al menys una d'aquestes variables està buida o si intensitat no és una string.
   if (
+    //Gestión de Errores
     peso === "" ||
     intensidad === "" ||
-    typeof(intensidad) !== "string" ||
+    typeof intensidad !== "string" ||//Gestión de Errores
     numRepeticiones === "" ||
     numSeries === "" ||
     tiempoEmpleado === ""
   ) {
-    alert("Los datos introducidos no son correctos.");
+    alert("Los datos introducidos no son correctos."); //Gestión de Errores
+  } else if (numRepeticiones <= 0 || 
+            numSeries <= 0 || 
+            tiempoEmpleado <= 0) {
+    alert("El Número de repeticiones, de series y el tiempo empleado debe ser superior a 0");
   } else {
     alert("¡Bien Hecho!");
-    // Agafar l'element HTML de destí (<p> buit) i afegim la corresponent variable que hem creat amunt.
-    document.getElementById("intensidadEjercicio").innerHTML = intensidad;
-    document.getElementById("pesoEjercicio").innerHTML = peso;
-    document.getElementById("numrepsEjercicio").innerHTML = numRepeticiones;
-    document.getElementById("numseriesEjercicio").innerHTML = numSeries;
-    document.getElementById("tiempoEjercicio").innerHTML = tiempoEmpleado;
+    
+    // Per fer la taula amb els valors que hem introduit al formulari fem el següent: Agafar l'element HTML de destí (<p> buit) i afegim la corresponent variable que hem creat amunt.
+    document.getElementById("intensidadEjercicio").innerHTML = `${intensidad} intensidad.`;
+    document.getElementById("pesoEjercicio").innerHTML = `${peso} kg.`;
+    document.getElementById("numrepsEjercicio").innerHTML = `${numRepeticiones} repeticiones.`;
+    document.getElementById("numseriesEjercicio").innerHTML = `${numSeries} series.`;
+    document.getElementById("tiempoEjercicio").innerHTML = `${tiempoEmpleado} minutos.`;
 
     document.getElementById("seguimiento2").style.display = "flex";
-
-}
+  }
 }

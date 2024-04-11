@@ -27,15 +27,15 @@
     <!--MAIN-->
     <main>
         <div class="ejercicios">
-            <button onclick="showBicepsPerderPeso()">
+            <button class="btnsperder" onclick="showBicepsPerderPeso()">
                 <img src="../MULTIMEDIA/brazo.png" alt="brazo" id="btn-brazo">
                 <p>TREN SUPERIOR</p>
             </button>
-            <button onclick="showAbsPerderPeso()">
+            <button class="btnsperder" onclick="showAbsPerderPeso()">
                 <img src="../MULTIMEDIA/abds.png" alt="abdominales" id="abds">
                 <p>CORE</p>
             </button>
-            <button onclick="showPiernasPerderPeso()">
+            <button class="btnsperder"  onclick="showPiernasPerderPeso()">
                 <img src="../MULTIMEDIA/pierna.png" alt="piernas">
                 <p>TREN INFERIOR</p>
             </button>
@@ -45,32 +45,32 @@
 
         <div class="explicacionej" id="explicacionej" style="display: none;">
             <div>
-                <h3>Nombre ejercicio:</h3>
+                <h3>NOMBRE EJERCICIO:</h3>
                 <p id="nombreEjercicio"></p>
             </div>
 
             <div>
-                <h3>Instrucciones:</h3>
+                <h3>INSTRUCCIONES:</h3>
                 <p id="instruccionesEjercicio"></p>
                 <p></p>
             </div>
 
             <div>
-                <h3>Musculos a trabajar:</h3>
+                <h3>MÚSCULOS A TRABAJAR:</h3>
                 <p id="musculosEjercicio"></p>
                 <p></p>
             </div>
 
             <div>
-                <h3>Equipamento:</h3>
+                <h3>EQUIPAMENTO NECESARIO:</h3>
                 <p id="equipamentoEjercicio"></p>
                 <p></p>
             </div>
             <div>
-                <h3>Vídeo explicativo:</h3>
+                <h3>VÍDEO EXPLICATIVO:</h3>
                 <iframe id="videoEjercicio" iframe  width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              
-
+            <br> 
+            <br>
             <br>
             <a href="../HTML/seguimiento.html"><button class="btnejercicio">¡Empezar!</button>
             </a>

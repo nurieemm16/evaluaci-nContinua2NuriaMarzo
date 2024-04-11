@@ -7,13 +7,13 @@ body {
 }
 
 a {
-    color: rgb(87, 17, 17);
+    color: aliceblue;
     text-decoration: none;
 }
 
 
 a:visited {
-    color: black;
+    color: aliceblue;
     text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ a:hover {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    color:rgba(37, 36, 36, 0.452);
+    color:rgba(10, 10, 10, 0.705);
 
 }
 
@@ -63,6 +63,17 @@ a:hover {
     justify-content: space-around;
     text-align: center;
     margin-top: 20vh;
+
+}
+
+.enlace{
+    width: 30%;
+    padding: 20px;
+    margin: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(87, 17, 17);
+    ;
 
 }
 
